@@ -3,9 +3,7 @@ import fs from 'fs'
 import getMeta from './libs/getMeta'
 
 async function main() {
-  const browser = await playwright.firefox.launch({
-    headless: false
-  })
+  const browser = await playwright.firefox.launch({ headless: false })
   const page = await browser.newPage()
   const content = JSON.parse(fs.readFileSync('./content.json', 'utf8'))
 

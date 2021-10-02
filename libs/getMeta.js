@@ -1,4 +1,4 @@
-import getRealURL from './getRealURL'
+import getRealURL from './getRealURL.js'
 
 async function getMeta(page, url) {
   await page.goto(url)
